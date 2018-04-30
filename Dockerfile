@@ -1,10 +1,14 @@
 FROM ubuntu:16.04
 
+RUN sudo add-apt-repository ppa:webupd8team/java -y
+
 RUN apt-get update -y && apt-get upgrade -y
 
-RUN apt-get install default-jdk tree tar git wget maven -y
+RUN sudo apt-get install oracle-java8-installer -y
 
-RUN mvn --version
+RUN apt-get install  tree tar git wget maven -y
+
+RUN mvn --version && java -version
 
 EXPOSE 8080
 
