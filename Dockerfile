@@ -2,9 +2,11 @@ FROM ubuntu:16.04
 
 RUN apt-get update -y && apt-get upgrade -y
 
+RUN apt-get install software-properties-common -y
+
 RUN add-apt-repository ppa:webupd8team/java -y
 
-RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get update -y
 
 RUN apt-get install oracle-java8-installer -y
 
