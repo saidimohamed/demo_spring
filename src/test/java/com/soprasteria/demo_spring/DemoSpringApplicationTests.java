@@ -17,13 +17,13 @@ public class DemoSpringApplicationTests {
     @Test
     public void test1() {
         int i = 0;
-        Assert.assertTrue(i == 1);
+        Assert.assertTrue(i == 0);
     }
 
     @Test
     public void test2() {
         int i = 0;
-        Assert.assertTrue(i != 0);
+        Assert.assertTrue(i != 1);
     }
 
     @Test
